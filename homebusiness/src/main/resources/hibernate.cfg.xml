@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/homebusiness?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <mapping class="zm.chichi.jfmc.entity.Bus" />
+    <mapping class="zm.chichi.jfmc.entity.BusExpense" />
+    <mapping class="zm.chichi.jfmc.entity.BusSale" />
+    <mapping class="zm.chichi.jfmc.entity.BusType" />
+    
+    <mapping class="zm.chichi.jfmc.entity.Animal" />
+    <mapping class="zm.chichi.jfmc.entity.Farm" />
+    <mapping class="zm.chichi.jfmc.entity.FarmArea" />
+    <mapping class="zm.chichi.jfmc.entity.FarmAreaAnimal" />
+    <mapping class="zm.chichi.jfmc.entity.FarmAreaCrop" />
+    <mapping class="zm.chichi.jfmc.entity.FarmExpense" />
+    <mapping class="zm.chichi.jfmc.entity.FarmSales" />
+    <mapping class="zm.chichi.jfmc.entity.Plant" />
+  </session-factory>
+</hibernate-configuration>
